@@ -1,0 +1,10 @@
+.DS_Store
+dev-env.zsh
+frontend-home-screenshot.png
+
+# Dependency and build output safety net.
+node_modules/
+.next/
+out/
+dist/
+
