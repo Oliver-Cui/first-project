@@ -5,18 +5,18 @@ import { testimonials, valuePillars } from "./data";
 export default function Home() {
   return (
     <PageShell>
-      <section className="relative isolate min-h-[calc(100vh-132px)] overflow-hidden bg-slate-950">
+      <section className="relative isolate overflow-hidden bg-slate-950">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-62"
+          className="absolute inset-0 bg-cover bg-center opacity-68"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2200&q=85')",
           }}
         />
-        <div className="absolute inset-0 bg-slate-950/42" />
-        <div className="relative mx-auto flex min-h-[calc(100vh-132px)] max-w-7xl items-center px-5 py-20 sm:px-8">
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgb(15_23_42_/_0.82),rgb(15_23_42_/_0.52),rgb(15_23_42_/_0.2))]" />
+        <div className="relative mx-auto grid min-h-[calc(100vh-68px)] max-w-7xl items-center gap-10 px-5 py-20 sm:px-8 lg:grid-cols-[1.05fr_0.7fr]">
           <div className="max-w-3xl text-white">
-            <p className="mb-5 inline-flex rounded-lg bg-white/14 px-4 py-2 text-sm font-semibold backdrop-blur">
+            <p className="mb-5 inline-flex rounded-lg bg-white/16 px-4 py-2 text-sm font-semibold backdrop-blur">
               Personalised tutoring in New Zealand
             </p>
             <h1 className="text-5xl font-semibold leading-tight sm:text-7xl">
@@ -29,16 +29,29 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/booking"
-                className="rounded-lg bg-amber-300 px-6 py-3 text-center text-sm font-semibold text-slate-950 hover:bg-amber-200"
+                className="rounded-lg bg-amber-300 px-6 py-3.5 text-center text-sm font-semibold text-slate-950 shadow-lg shadow-slate-950/20 hover:bg-amber-200"
               >
                 Book Now
               </Link>
               <Link
                 href="/tutoring"
-                className="rounded-lg border border-white/70 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-white/12"
+                className="rounded-lg border border-white/70 px-6 py-3.5 text-center text-sm font-semibold text-white hover:bg-white/12"
               >
                 See How Tutoring Works
               </Link>
+            </div>
+          </div>
+          <div className="hidden justify-self-end rounded-lg border border-white/18 bg-white/12 p-5 text-white shadow-2xl backdrop-blur-md lg:block">
+            <p className="text-sm font-semibold uppercase text-amber-200">What families notice</p>
+            <div className="mt-5 grid gap-4">
+              {["More willingness to try", "Clear weekly progress", "A calmer learning routine"].map(
+                (item) => (
+                  <div key={item} className="flex items-center gap-3 rounded-lg bg-white/12 p-4">
+                    <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
+                    <span className="text-sm font-semibold">{item}</span>
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </div>
@@ -51,8 +64,14 @@ export default function Home() {
           description="Our tutoring is designed around the emotional and academic needs that matter to families."
         />
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
-          {valuePillars.map((pillar) => (
-            <article key={pillar.title} className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm">
+          {valuePillars.map((pillar, index) => (
+            <article
+              key={pillar.title}
+              className="rounded-lg border border-slate-200 bg-white p-7 shadow-[0_18px_45px_rgb(15_23_42_/_0.06)]"
+            >
+              <span className="mb-5 grid h-10 w-10 place-items-center rounded-lg bg-sky-50 text-sm font-bold text-emerald-800">
+                0{index + 1}
+              </span>
               <h2 className="text-2xl font-semibold text-slate-950">{pillar.title}</h2>
               <p className="mt-4 leading-7 text-slate-650">{pillar.description}</p>
             </article>
@@ -67,10 +86,14 @@ export default function Home() {
             <h2 className="text-4xl font-semibold leading-tight sm:text-6xl">
               From &quot;I can&apos;t&quot; to &quot;I can.&quot;
             </h2>
+            <p className="mt-5 max-w-xl text-lg leading-8 text-white/75">
+              The goal is not to rush students. It is to help them feel safe enough to try, steady
+              enough to improve, and confident enough to keep going.
+            </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-3">
             {["Unsure", "Supported", "Confident"].map((stage, index) => (
-              <div key={stage} className="rounded-lg bg-white/10 p-5">
+              <div key={stage} className="rounded-lg border border-white/12 bg-white/10 p-5">
                 <span className="text-sm font-semibold text-amber-300">0{index + 1}</span>
                 <h3 className="mt-4 text-xl font-semibold">{stage}</h3>
                 <p className="mt-3 text-sm leading-6 text-white/78">
@@ -90,8 +113,9 @@ export default function Home() {
         <SectionIntro title="What Parents Say" description="Early trust signals for families considering support." />
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
           {testimonials.map((testimonial) => (
-            <figure key={testimonial.parent} className="rounded-lg bg-white p-7 shadow-sm">
-              <blockquote className="leading-7 text-slate-750">&quot;{testimonial.quote}&quot;</blockquote>
+            <figure key={testimonial.parent} className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-slate-200/70">
+              <div className="mb-5 text-3xl font-semibold text-emerald-700">&ldquo;</div>
+              <blockquote className="leading-7 text-slate-750">{testimonial.quote}</blockquote>
               <figcaption className="mt-5 text-sm font-semibold text-emerald-800">
                 {testimonial.parent}
               </figcaption>

@@ -18,48 +18,74 @@ export const valuePillars = [
 
 export const processSteps = [
   {
-    title: "Get to Know Your Child",
+    title: "Free Parent Chat",
     description:
-      "We start with a friendly conversation to learn about your child's strengths, challenges, interests, and personality.",
+      "We start with a friendly conversation to understand your child's current needs, school year, subject goals, and whether online, in-person, or hybrid support fits best.",
   },
   {
-    title: "Understand Their Learning Needs",
+    title: "Understand Their Learning Level",
     description:
-      "Based on the initial assessment, we match your child with a tutor and class that suits their level and learning style.",
+      "We identify the subject area, curriculum level, confidence gaps, and whether the student needs foundation support, extension, exam preparation, or CAA/NCEA guidance.",
   },
   {
-    title: "Create a Personalised Plan",
+    title: "Choose the Right Class Format",
     description:
-      "The tutor designs lessons around your child's needs and goals, rather than following a one-size-fits-all approach.",
+      "Families can choose private 1:1 lessons, VIP paired lessons, or focused small groups of up to six students, depending on the student's needs.",
   },
   {
-    title: "Learn and Grow Every Week",
+    title: "Two 60-Minute Lessons Each Week",
     description:
-      "Students attend regular lessons with structured support aligned to the NZ curriculum, while parents receive feedback.",
+      "Students normally attend two 60-minute lessons each week, aligned with NZ Curriculum, CAA, or NCEA expectations and adjusted to their progress.",
   },
 ];
 
 export const subjects = [
   {
     name: "English",
-    levels: "Years 3-11",
-    description: "Reading, writing, vocabulary, comprehension, and confident communication.",
+    levels: "Years 9-13 / NCEA",
+    description:
+      "Writing structure, reading comprehension, vocabulary, essay confidence, and support for NCEA English requirements.",
   },
   {
     name: "Mathematics",
-    levels: "Years 3-11",
-    description: "Core numeracy, problem solving, algebra foundations, and exam confidence.",
+    levels: "Years 9-13 / NCEA / CAA",
+    description:
+      "Foundation skills, algebra, problem solving, exam preparation, confidence building, and numeracy support for CAA.",
   },
   {
     name: "Science",
-    levels: "Years 7-11",
-    description: "Concept understanding, structured explanations, and practical study habits.",
+    levels: "Years 9-13 / NCEA",
+    description:
+      "Clear explanations, core concept support, study routines, and preparation for school assessments and NCEA topics.",
   },
   {
-    name: "Study Skills",
-    levels: "Upper primary to secondary",
-    description: "Planning, revision habits, confidence, and independent learning routines.",
+    name: "ESOL & Writing",
+    levels: "Secondary students",
+    description:
+      "English language support, sentence structure, writing confidence, communication skills, and personalised practice.",
   },
+];
+
+export const tutoringFormats = [
+  {
+    title: "Private 1:1 Lessons",
+    description: "Individual support for students who need focused help, confidence rebuilding, or a personalised pace.",
+  },
+  {
+    title: "VIP Paired Lessons",
+    description: "A two-student option for learners at a similar level who benefit from close tutor attention.",
+  },
+  {
+    title: "Small Group Classes",
+    description: "Focused groups of up to six students, designed to keep lessons personal while encouraging peer learning.",
+  },
+];
+
+export const localDetails = [
+  "Based in Hamilton, New Zealand.",
+  "Online, in-person, and hybrid tutoring options available.",
+  "Lessons available near Chartwell Mall, with convenient parking and nearby bus access.",
+  "Support for Years 9-13, NCEA Levels 1-3, CAA, English, Maths, Science, ESOL, and Writing.",
 ];
 
 export const tutors = [

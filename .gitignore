@@ -1,10 +1,10 @@
 .DS_Store
 dev-env.zsh
 frontend-home-screenshot.png
+frontend-polished-home.png
 
 # Dependency and build output safety net.
 node_modules/
 .next/
 out/
 dist/
-
