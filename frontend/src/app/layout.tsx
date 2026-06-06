@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lightpath.co.nz"),
   title: "Lightpath Coaching",
   description: "Personalised tutoring that helps children build confidence.",
 };
