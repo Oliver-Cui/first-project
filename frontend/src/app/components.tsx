@@ -20,7 +20,7 @@ export function Footer() {
         <div>
           <h2 className="mb-3 text-sm font-semibold text-white">Contact</h2>
           <p className="text-sm leading-6 text-slate-300">021 000 0000</p>
-          <p className="text-sm leading-6 text-slate-300">hello@lightpath.co.nz</p>
+          <p className="text-sm leading-6 text-slate-300">lightpathcoachingnz@gmail.com</p>
         </div>
         <div>
           <h2 className="mb-3 text-sm font-semibold text-white">Social</h2>
