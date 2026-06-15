@@ -88,7 +88,7 @@ export const localDetails = [
   "Support for Years 9-13, NCEA Levels 1-3, CAA, English, Maths, Science, ESOL, and Writing.",
 ];
 
-export const tutors = [
+export const teamMembers = [
   {
     name: "Jo de Lisle",
     subjects: "ESOL, English Language & Academic English",
@@ -117,6 +117,15 @@ export const tutors = [
       "Experience teaching Academic English, IELTS, General English, and pathway English",
     ],
     initials: "SD",
+  },
+  {
+    name: "Marketing Officer profile coming soon",
+    subjects: "Marketing Officer",
+    bio: "We will add this team member's role, background, and profile details once the information is ready.",
+    teachingStyle:
+      "Supports clear communication with families and helps present Lightpath Coaching in a warm, professional way.",
+    highlights: ["Profile details to be confirmed", "Photo to be added", "Role and responsibilities to be updated"],
+    initials: "MO",
   },
 ];
 
