@@ -90,28 +90,33 @@ export const localDetails = [
 
 export const tutors = [
   {
-    name: "Emily Carter",
-    subjects: "English, Study Skills",
-    experience: "8 years teaching experience",
-    strengths: "Patient coaching, writing confidence, and clear feedback.",
-    image:
-      "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80",
+    name: "Jo de Lisle",
+    subjects: "ESOL, English Language & Academic English",
+    bio: "Jo is an experienced ESOL and English language educator with decades of teaching and programme leadership experience in Hamilton and the Waikato. She has supported migrants, refugees, international students, and adult learners across general English, academic English, IELTS preparation, professional speaking, and one-to-one language learning.",
+    teachingStyle:
+      "Warm, patient, and confidence-focused, with strong support for learners who need time, encouragement, and clear communication.",
+    highlights: [
+      "Master of Education, University of Waikato",
+      "Diploma in Second Language Teaching",
+      "Former Principal Academic Staff Member at Wintec",
+      "Former Manager, English Language Partners Waikato/Taupo",
+    ],
+    image: "/tutors/jo-de-lisle.png",
+    initials: "JD",
   },
   {
-    name: "Daniel Kim",
-    subjects: "Mathematics, Science",
-    experience: "6 years tutoring experience",
-    strengths: "Explaining tricky ideas step by step and building problem-solving habits.",
-    image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Sophie Williams",
-    subjects: "English, Mathematics",
-    experience: "Primary and intermediate specialist",
-    strengths: "Warm support for anxious learners and personalised lesson planning.",
-    image:
-      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80",
+    name: "Steven Donald",
+    subjects: "Academic English, ESOL & IELTS",
+    bio: "Steven is an experienced ESOL, Academic English, and applied linguistics educator with extensive teaching experience in New Zealand and Japan. He has taught IELTS, academic writing, reading, speaking, General English, and university pathway English across tertiary and international education settings.",
+    teachingStyle:
+      "Structured, thoughtful, and step-by-step, with a strong focus on academic confidence, reading development, and clear written communication.",
+    highlights: [
+      "Master of Philosophy in Applied Linguistics, University of Waikato",
+      "Master of Education, University of Otago",
+      "Advanced Certificate in TESOL, University of Leicester",
+      "Experience teaching Academic English, IELTS, General English, and pathway English",
+    ],
+    initials: "SD",
   },
 ];
 
