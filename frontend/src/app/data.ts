@@ -91,6 +91,7 @@ export const localDetails = [
 export const teamMembers = [
   {
     name: "Jo de Lisle",
+    role: "Tutor",
     subjects: "ESOL, English Language & Academic English",
     bio: "Jo is an experienced ESOL and English language educator with decades of teaching and programme leadership experience in Hamilton and the Waikato. She has supported migrants, refugees, international students, and adult learners across general English, academic English, IELTS preparation, professional speaking, and one-to-one language learning.",
     teachingStyle:
@@ -106,6 +107,7 @@ export const teamMembers = [
   },
   {
     name: "Steven Donald",
+    role: "Tutor",
     subjects: "Academic English, ESOL & IELTS",
     bio: "Steven is an experienced ESOL, Academic English, and applied linguistics educator with extensive teaching experience in New Zealand and Japan. He has taught IELTS, academic writing, reading, speaking, General English, and university pathway English across tertiary and international education settings.",
     teachingStyle:
@@ -119,7 +121,8 @@ export const teamMembers = [
     initials: "SD",
   },
   {
-    name: "Marketing Officer profile coming soon",
+    name: "Profile coming soon",
+    role: "Marketing Officer",
     subjects: "Marketing Officer",
     bio: "We will add this team member's role, background, and profile details once the information is ready.",
     teachingStyle:
