@@ -121,14 +121,20 @@ export const teamMembers = [
     initials: "SD",
   },
   {
-    name: "Profile coming soon",
+    name: "Zhike Yu",
     role: "Marketing Officer",
-    subjects: "Marketing Officer",
-    bio: "We will add this team member's role, background, and profile details once the information is ready.",
+    subjects: "Education Marketing, Client Engagement & Student Support",
+    bio: "Zhike brings five years of experience in education marketing, client engagement, event coordination, and student support. Before joining Lightpath Coaching, she worked with New Channel School, one of China's leading language training and study-abroad education providers, where she supported IELTS-related campaigns, seminars, student enquiries, CRM follow-ups, and parent communication.",
     teachingStyle:
-      "Supports clear communication with families and helps present Lightpath Coaching in a warm, professional way.",
-    highlights: ["Profile details to be confirmed", "Photo to be added", "Role and responsibilities to be updated"],
-    initials: "MO",
+      "Organised, responsive, and relationship-focused, Zhike helps families understand our programmes clearly and supports smooth communication from first enquiry through to class arrangement.",
+    highlights: [
+      "Master of Business and Management Studies, University of Waikato",
+      "Five years' experience in education marketing and client engagement",
+      "Experience with IELTS, language training, and study-abroad services",
+      "Skilled in CRM follow-up and parent communication",
+    ],
+    image: "/tutors/zhike-yu-sky50-v5.png",
+    initials: "ZY",
   },
 ];
 
