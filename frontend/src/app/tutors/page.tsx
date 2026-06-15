@@ -12,7 +12,7 @@ export default function TutorsPage() {
           description="Families need to understand who will support their child and how our team brings teaching experience, care, and clear communication together."
           headingLevel="h1"
         />
-        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-7xl items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member) => (
             <article
               key={member.name}
