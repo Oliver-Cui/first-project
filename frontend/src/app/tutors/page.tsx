@@ -33,7 +33,7 @@ export default function TutorsPage() {
                   </div>
                 )}
               </div>
-              <div className="p-6">
+              <div className="px-6 pb-6 pt-6">
                 <div className="flex flex-wrap items-center gap-3">
                   <h2 className="text-2xl font-semibold text-slate-950">{member.name}</h2>
                   <span className="rounded-full bg-emerald-800 px-3 py-1 text-xs font-semibold uppercase text-white">
@@ -42,12 +42,12 @@ export default function TutorsPage() {
                 </div>
                 <p className="mt-3 text-xs font-semibold uppercase text-slate-500">Focus area</p>
                 <p className="mt-1 text-sm font-semibold text-emerald-800">{member.subjects}</p>
-                <details className="group mt-5">
-                  <summary className="flex cursor-pointer list-none items-center justify-between border-t border-slate-200 pt-4 text-sm font-semibold text-emerald-800">
+                <details className="group mt-5 lg:mt-4">
+                  <summary className="flex cursor-pointer list-none items-center justify-between border-t border-slate-200 pt-4 text-sm font-semibold text-emerald-800 lg:pt-3">
                     <span>Learn more</span>
                     <span className="text-lg leading-none transition group-open:rotate-45">+</span>
                   </summary>
-                  <div className="mt-5">
+                  <div className="mt-5 lg:mt-4">
                     <p className="text-sm leading-6 text-slate-650">{member.bio}</p>
                     <div className="mt-5 rounded-lg bg-amber-100 p-4">
                       <p className="text-xs font-semibold uppercase text-emerald-800">Working style</p>
