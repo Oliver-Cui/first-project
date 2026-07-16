@@ -7,7 +7,7 @@ export default function TutoringPage() {
       <section className="bg-sky-50 px-5 py-20 sm:px-8">
         <SectionIntro
           eyebrow="Tutoring"
-          title="Hamilton Tutoring for Years 9-13 and NCEA."
+          title="Hamilton tutoring for school-aged learners."
           description="Personalised support for English, Maths, Science, ESOL, Writing, CAA, and NCEA Levels 1-3, available online, in person, or hybrid."
           headingLevel="h1"
         />
@@ -47,7 +47,7 @@ export default function TutoringPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-2xl">
             <p className="mb-3 text-sm font-semibold uppercase text-amber-300">Subjects</p>
-            <h2 className="text-3xl font-semibold sm:text-5xl">Focused support for secondary learners.</h2>
+            <h2 className="text-3xl font-semibold sm:text-5xl">Focused support for school learners.</h2>
             <p className="mt-5 text-lg leading-8 text-white/75">
               Lessons can focus on foundation skills, extension, exam preparation, or confidence
               building, depending on each student&apos;s current level and goals.
@@ -81,9 +81,6 @@ export default function TutoringPage() {
               </article>
             ))}
           </div>
-          <p className="mt-8 rounded-lg bg-amber-100 p-5 text-sm font-semibold leading-6 text-slate-800">
-            Standard learning schedule: two lessons per week, 60 minutes per lesson.
-          </p>
         </div>
       </section>
 

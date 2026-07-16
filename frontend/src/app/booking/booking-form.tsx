@@ -25,7 +25,6 @@ const initialFormState: FormState = {
 };
 
 const requiredFields: Array<keyof FormState> = [
-  "parentName",
   "email",
   "phone",
   "childYearLevel",
@@ -82,7 +81,7 @@ export function BookingForm() {
     <form onSubmit={handleSubmit} className="mx-auto grid max-w-3xl gap-5 rounded-lg bg-white p-6 shadow-sm sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="text-sm font-semibold text-slate-750">
-          Parent name *
+          Parent name
           <input
             value={form.parentName}
             onChange={(event) => updateField("parentName", event.target.value)}
@@ -113,7 +112,7 @@ export function BookingForm() {
           />
         </label>
         <label className="text-sm font-semibold text-slate-750">
-          Child year level *
+          Student year level *
           <select
             value={form.childYearLevel}
             onChange={(event) => updateField("childYearLevel", event.target.value)}
@@ -125,6 +124,7 @@ export function BookingForm() {
             <option>Year 11 / NCEA Level 1</option>
             <option>Year 12 / NCEA Level 2</option>
             <option>Year 13 / NCEA Level 3</option>
+            <option>Other</option>
           </select>
         </label>
       </div>
@@ -156,7 +156,7 @@ export function BookingForm() {
             className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-3 font-normal"
           >
             <option value="">Please select</option>
-            <option>In person near Chartwell Mall</option>
+            <option>In person near Chartwell Westfield</option>
             <option>Online</option>
             <option>Hybrid</option>
             <option>Not sure yet</option>
@@ -173,7 +173,7 @@ export function BookingForm() {
         >
           <option value="">Please select</option>
           <option>Private 1:1 lesson</option>
-          <option>VIP paired lesson</option>
+          <option>Semi-private lesson</option>
           <option>Small group class</option>
           <option>Not sure yet</option>
         </select>

@@ -41,27 +41,14 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="hidden justify-self-end rounded-lg border border-white/18 bg-white/12 p-5 text-white shadow-2xl backdrop-blur-md lg:block">
-            <p className="text-sm font-semibold uppercase text-amber-200">What families notice</p>
-            <div className="mt-5 grid gap-4">
-              {["More willingness to try", "Clear weekly progress", "A calmer learning routine"].map(
-                (item) => (
-                  <div key={item} className="flex items-center gap-3 rounded-lg bg-white/12 p-4">
-                    <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
-                    <span className="text-sm font-semibold">{item}</span>
-                  </div>
-                ),
-              )}
-            </div>
-          </div>
         </div>
       </section>
 
       <section className="bg-white px-5 py-20 sm:px-8">
         <SectionIntro
           eyebrow="What parents care about"
-          title="More support, more confidence, steady progress."
-          description="Our tutoring is designed around the emotional and academic needs that matter to families."
+          title="More support, greater confidence, real progress."
+          description="Our tutoring is designed around academic and learning needs that matter to families."
         />
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
           {valuePillars.map((pillar, index) => (
@@ -110,7 +97,10 @@ export default function Home() {
       </section>
 
       <section className="bg-sky-50 px-5 py-20 sm:px-8">
-        <SectionIntro title="What Parents Say" description="Early trust signals for families considering support." />
+        <SectionIntro
+          title="What Families Say"
+          description="Real feedback from parents and students who have learned with us."
+        />
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
           {testimonials.map((testimonial) => (
             <figure key={testimonial.parent} className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-slate-200/70">

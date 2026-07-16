@@ -19,7 +19,6 @@ export function Footer() {
         </div>
         <div>
           <h2 className="mb-3 text-sm font-semibold text-white">Contact</h2>
-          <p className="text-sm leading-6 text-slate-300">021 000 0000</p>
           <p className="text-sm leading-6 text-slate-300">lightpathcoachingnz@gmail.com</p>
         </div>
         <div>
@@ -77,9 +76,8 @@ export function CTASection() {
     <section className="bg-amber-100">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-5 py-14 sm:px-8 md:flex-row md:items-center">
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase text-emerald-800">Ready when you are</p>
           <h2 className="max-w-2xl text-3xl font-semibold text-slate-950 sm:text-4xl">
-            Let&apos;s Help Your Child Feel Confident Again.
+            Let&apos;s help every student feel confident.
           </h2>
         </div>
         <Link

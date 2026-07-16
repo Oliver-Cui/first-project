@@ -50,7 +50,9 @@ export default function TutorsPage() {
                   <div className="mt-5 lg:mt-4">
                     <p className="text-sm leading-6 text-slate-650">{member.bio}</p>
                     <div className="mt-5 rounded-lg bg-amber-100 p-4">
-                      <p className="text-xs font-semibold uppercase text-emerald-800">Working style</p>
+                      <p className="text-xs font-semibold uppercase text-emerald-800">
+                        {member.role.includes("Tutor") ? "Teaching style" : "Working style"}
+                      </p>
                       <p className="mt-2 text-sm leading-6 text-slate-750">{member.teachingStyle}</p>
                     </div>
                     <ul className="mt-5 grid gap-2 text-sm leading-6 text-slate-650">
