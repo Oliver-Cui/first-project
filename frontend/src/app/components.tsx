@@ -4,30 +4,30 @@ import { Header } from "./site-header";
 
 export function Footer() {
   return (
-    <footer className="bg-slate-950 text-white">
+    <footer className="border-t border-emerald-100 bg-white text-slate-950">
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <div className="mb-3 flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-lg bg-amber-300 text-lg font-bold text-slate-950">
+            <span className="grid h-10 w-10 place-items-center rounded-lg bg-emerald-700 text-lg font-bold text-white">
               L
             </span>
             <span className="font-semibold">Lightpath Coaching</span>
           </div>
-          <p className="max-w-sm text-sm leading-6 text-slate-300">
+          <p className="max-w-sm text-sm leading-6 text-slate-650">
             Personalised tutoring that helps students feel confident, supported, and capable.
           </p>
         </div>
         <div>
-          <h2 className="mb-3 text-sm font-semibold text-white">Contact</h2>
-          <p className="text-sm leading-6 text-slate-300">lightpathcoachingnz@gmail.com</p>
+          <h2 className="mb-3 text-sm font-semibold text-slate-950">Contact</h2>
+          <p className="text-sm leading-6 text-slate-650">lightpathcoachingnz@gmail.com</p>
         </div>
         <div>
-          <h2 className="mb-3 text-sm font-semibold text-white">Social</h2>
-          <div className="flex gap-4 text-sm text-slate-300">
-            <a href="#" className="hover:text-white">
+          <h2 className="mb-3 text-sm font-semibold text-slate-950">Social</h2>
+          <div className="flex gap-4 text-sm text-slate-650">
+            <a href="#" className="hover:text-emerald-800">
               Instagram
             </a>
-            <a href="#" className="hover:text-white">
+            <a href="#" className="hover:text-emerald-800">
               Facebook
             </a>
           </div>
@@ -73,7 +73,7 @@ export function SectionIntro({
 
 export function CTASection() {
   return (
-    <section className="bg-amber-100">
+    <section className="bg-amber-50">
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-5 py-14 sm:px-8 md:flex-row md:items-center">
         <div>
           <h2 className="max-w-2xl text-3xl font-semibold text-slate-950 sm:text-4xl">
@@ -82,7 +82,7 @@ export function CTASection() {
         </div>
         <Link
           href="/booking"
-          className="rounded-lg bg-slate-950 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+          className="rounded-lg bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800"
         >
           Book a Free Chat
         </Link>

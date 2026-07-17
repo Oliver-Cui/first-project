@@ -43,19 +43,19 @@ export default function TutoringPage() {
         </div>
       </section>
 
-      <section className="bg-emerald-950 px-5 py-20 text-white sm:px-8">
+      <section className="bg-emerald-50 px-5 py-20 text-slate-950 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-2xl">
-            <p className="mb-3 text-sm font-semibold uppercase text-amber-300">Subjects</p>
+            <p className="mb-3 text-sm font-semibold uppercase text-emerald-700">Subjects</p>
             <h2 className="text-3xl font-semibold sm:text-5xl">Focused support for school learners.</h2>
-            <p className="mt-5 text-lg leading-8 text-white/75">
+            <p className="mt-5 text-lg leading-8 text-slate-650">
               Lessons can focus on foundation skills, extension, exam preparation, or confidence
               building, depending on each student&apos;s current level and goals.
             </p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {subjects.map((subject) => (
-              <article key={subject.name} className="rounded-lg bg-white p-6 text-slate-950">
+              <article key={subject.name} className="rounded-lg border border-emerald-100 bg-white p-6 text-slate-950 shadow-sm">
                 <h3 className="text-2xl font-semibold">{subject.name}</h3>
                 <p className="mt-2 text-sm font-semibold text-emerald-800">{subject.levels}</p>
                 <p className="mt-4 text-sm leading-6 text-slate-650">{subject.description}</p>

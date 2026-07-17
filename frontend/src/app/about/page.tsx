@@ -41,15 +41,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-emerald-950 px-5 py-20 text-white sm:px-8">
+      <section className="bg-emerald-50 px-5 py-20 text-slate-950 sm:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 max-w-2xl">
-            <p className="mb-3 text-sm font-semibold uppercase text-amber-300">What makes us different</p>
+            <p className="mb-3 text-sm font-semibold uppercase text-emerald-700">What makes us different</p>
             <h2 className="text-3xl font-semibold sm:text-5xl">Confidence is built into the approach.</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {differenceItems.map((item) => (
-              <div key={item} className="rounded-lg bg-white/10 p-6">
+              <div key={item} className="rounded-lg border border-emerald-100 bg-white p-6 shadow-sm">
                 <p className="text-lg font-semibold leading-7">{item}</p>
               </div>
             ))}

@@ -9,8 +9,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-68"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=2200&q=85')",
+            backgroundImage: "url('/home/lightpath-small-group-hero.png')",
           }}
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgb(15_23_42_/_0.82),rgb(15_23_42_/_0.52),rgb(15_23_42_/_0.2))]" />
@@ -35,7 +34,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/tutoring"
-                className="rounded-lg border border-white/70 px-6 py-3.5 text-center text-sm font-semibold text-white hover:bg-white/12"
+                className="rounded-lg border border-white/30 bg-white/12 px-6 py-3.5 text-center text-sm font-semibold text-white backdrop-blur hover:bg-white/18"
               >
                 See How Tutoring Works
               </Link>
@@ -66,24 +65,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-emerald-950 px-5 py-20 text-white sm:px-8">
+      <section className="bg-emerald-50 px-5 py-20 text-slate-950 sm:px-8">
         <div className="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-[1fr_1.1fr]">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase text-amber-300">The shift we work toward</p>
+            <p className="mb-4 text-sm font-semibold uppercase text-emerald-700">The shift we work toward</p>
             <h2 className="text-4xl font-semibold leading-tight sm:text-6xl">
               From &quot;I can&apos;t&quot; to &quot;I can.&quot;
             </h2>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-white/75">
+            <p className="mt-5 max-w-xl text-lg leading-8 text-slate-650">
               The goal is not to rush students. It is to help them feel safe enough to try, steady
               enough to improve, and confident enough to keep going.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-3">
             {["Unsure", "Supported", "Confident"].map((stage, index) => (
-              <div key={stage} className="rounded-lg border border-white/12 bg-white/10 p-5">
-                <span className="text-sm font-semibold text-amber-300">0{index + 1}</span>
+              <div key={stage} className="rounded-lg border border-emerald-100 bg-white p-5 shadow-sm">
+                <span className="text-sm font-semibold text-emerald-700">0{index + 1}</span>
                 <h3 className="mt-4 text-xl font-semibold">{stage}</h3>
-                <p className="mt-3 text-sm leading-6 text-white/78">
+                <p className="mt-3 text-sm leading-6 text-slate-650">
                   {index === 0
                     ? "We listen first and understand where learning feels difficult."
                     : index === 1

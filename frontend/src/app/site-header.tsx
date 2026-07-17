@@ -22,7 +22,7 @@ export function Header() {
           aria-label="Lightpath Coaching home"
           onClick={() => setIsMenuOpen(false)}
         >
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-emerald-800 text-lg font-bold text-white shadow-sm">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-emerald-700 text-lg font-bold text-white shadow-sm">
             L
           </span>
           <span className="truncate text-base font-semibold text-slate-950">Lightpath Coaching</span>
@@ -39,7 +39,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Link
             href="/booking"
-            className="hidden rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800 sm:inline-flex"
+            className="hidden rounded-lg bg-amber-300 px-4 py-2.5 text-sm font-semibold text-slate-950 shadow-sm hover:bg-amber-200 sm:inline-flex"
           >
             Book a Free Chat
           </Link>
@@ -87,7 +87,7 @@ export function Header() {
             ))}
             <Link
               href="/booking"
-              className="mt-2 rounded-lg bg-emerald-700 px-4 py-3 text-center font-semibold text-white hover:bg-emerald-800"
+              className="mt-2 rounded-lg bg-amber-300 px-4 py-3 text-center font-semibold text-slate-950 hover:bg-amber-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Book a Free Chat
