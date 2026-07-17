@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { PageShell, SectionIntro } from "../components";
 import { BookingForm } from "./booking-form";
+
+export const metadata: Metadata = {
+  title: "Book a Free Chat",
+  description:
+    "Book a free chat with Lightpath Coaching to discuss student year level, subject needs, lesson format, and online, in-person, or hybrid tutoring options.",
+  alternates: {
+    canonical: "/booking",
+  },
+};
 
 export default function BookingPage() {
   return (

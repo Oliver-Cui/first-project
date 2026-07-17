@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { CTASection, PageShell, SectionIntro } from "../components";
 import { localDetails, processSteps, subjects, tutoringFormats } from "../data";
+
+export const metadata: Metadata = {
+  title: "Tutoring in Hamilton",
+  description:
+    "Explore Lightpath Coaching tutoring options in Hamilton, including English, Maths, Science, ESOL, writing, CAA, and NCEA support with private, semi-private, small group, online, in-person, and hybrid lessons.",
+  alternates: {
+    canonical: "/tutoring",
+  },
+};
 
 export default function TutoringPage() {
   return (

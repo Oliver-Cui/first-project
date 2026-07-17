@@ -1,6 +1,16 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { CTASection, PageShell, SectionIntro } from "./components";
 import { testimonials, valuePillars } from "./data";
+
+export const metadata: Metadata = {
+  title: "Hamilton Tutoring for School-Aged Learners",
+  description:
+    "Lightpath Coaching provides personalised tutoring in Hamilton to help school-aged learners build confidence, improve English, Maths, Science, writing, and NCEA skills.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

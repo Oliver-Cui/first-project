@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import { CTASection, PageShell, SectionIntro } from "../components";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about Lightpath Coaching, a Hamilton tutoring provider focused on personalised learning, confidence building, NZ curriculum alignment, and clear family communication.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 const differenceItems = [
   "We help students feel confident, not just get higher scores.",

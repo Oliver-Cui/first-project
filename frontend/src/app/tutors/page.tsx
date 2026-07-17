@@ -1,6 +1,16 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { CTASection, PageShell, SectionIntro } from "../components";
 import { teamMembers } from "../data";
+
+export const metadata: Metadata = {
+  title: "Meet Our Team",
+  description:
+    "Meet the Lightpath Coaching team, including experienced English and Mathematics tutors and education marketing support for families in Hamilton and online.",
+  alternates: {
+    canonical: "/tutors",
+  },
+};
 
 export default function TutorsPage() {
   return (
