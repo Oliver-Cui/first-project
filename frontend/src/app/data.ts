@@ -103,7 +103,7 @@ export const teamMembers = [
       "Former Principal Academic Staff Member at Wintec",
       "Former Manager, English Language Partners Waikato/Taupo",
     ],
-    image: "/tutors/jo-de-lisle.png",
+    image: "/tutors/jo-de-lisle-v4.png",
     initials: "JD",
   },
   {
@@ -119,6 +119,7 @@ export const teamMembers = [
       "Advanced Certificate in TESOL, University of Leicester",
       "Experience teaching Academic English, IELTS, General English, and pathway English",
     ],
+    image: "/tutors/steven-donald-v2.png",
     initials: "SD",
   },
   {
@@ -134,8 +135,24 @@ export const teamMembers = [
       "95% in Year 10 and 98% in Year 12 Mathematics",
       "Operations Manager with strong analytical and organisational expertise",
     ],
-    image: "/tutors/nishi-piplani-sky50-v3.png",
+    image: "/tutors/nishi-piplani-sky50-v4.png",
     initials: "NP",
+  },
+  {
+    name: "Theana Chen",
+    role: "Chemistry Tutor",
+    subjects: "Chemistry, Study Skills & Academic Confidence",
+    bio: "Theana brings a thoughtful, reliable, and student-centred approach to Chemistry support. Her academic leadership and peer mentoring experience help her guide learners through scientific ideas with organisation, confidence, and practical study strategies.",
+    teachingStyle:
+      "Friendly, patient, and encouraging, Theana creates a supportive space where students can ask questions, build positive study habits, and make steady progress step by step.",
+    highlights: [
+      "Chemistry learning support with a clear, structured approach",
+      "Academic leadership and peer mentoring experience",
+      "Reliable, adaptable, and quick to understand student needs",
+      "Strong teamwork, organisation, and time-management skills",
+    ],
+    image: "/tutors/theana-chen-v1.png",
+    initials: "TC",
   },
   {
     name: "Thea (Zhike) Yu",
