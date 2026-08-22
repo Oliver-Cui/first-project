@@ -186,3 +186,52 @@ During review, several generated logo options were rejected because they felt to
 The selected logo was then added to the website header and footer. The image was cropped to remove excess whitespace so that both the logo mark and text are more readable in the website navigation area.
 
 The website now uses the updated company logo as the main brand identity across the header and footer.
+
+## Local Computer Migration Record
+
+Migration date: 22 August 2026
+
+The project was migrated to a new local computer from the GitHub repository:
+
+```text
+https://github.com/Oliver-Cui/first-project.git
+```
+
+The repository was cloned into a local `first-project` directory. The Next.js application is located in `first-project/frontend`.
+
+The migration procedure is:
+
+1. Install VS Code, Git, Node.js LTS, and pnpm.
+2. Verify the tools with `node -v`, `pnpm -v`, and `git --version`.
+3. Clone the repository with `git clone https://github.com/Oliver-Cui/first-project.git`.
+4. Open `first-project/frontend` and run `pnpm install`.
+5. Create `frontend/.env.local` manually for the Resend email configuration.
+6. Run `pnpm dev` and open `http://localhost:3000`.
+
+The local email configuration uses these variable names:
+
+```text
+RESEND_API_KEY=
+CONTACT_TO_EMAIL=lightpathcoachingnz@gmail.com
+CONTACT_FROM_EMAIL=Lightpath Website <verified-sender@example.com>
+```
+
+The real Resend API key and verified sender address must be entered only on the local computer. The `.env.local` file is excluded by Git and must not be committed or copied into the work communication record.
+
+If `RESEND_API_KEY` is empty, the website contact form runs in mock mode and does not send a real email. This allows the local website and form flow to be checked safely before the email credentials are configured.
+
+For ongoing work, changes made on one computer should be committed and pushed to GitHub. The other computer can then update its copy with `git pull`. Run `pnpm install` again whenever the dependency files have changed, then start the site with `pnpm dev`.
+
+The existing work communication records are tracked in Git, so they migrate automatically with the repository. Local-only files such as `.env.local` do not migrate through GitHub and must be recreated on each computer.
+
+The new local computer was verified with the following installed versions:
+
+```text
+Node.js v22.23.2 LTS
+npm 10.9.8
+pnpm 11.22.0
+Git 2.50.1 (Apple Git-155)
+Visual Studio Code 1.134.0 (Apple Silicon)
+```
+
+The `code` command was also made available in Terminal. After installation, the existing lockfile passed an offline dependency check and the Next.js production build completed successfully using the newly installed system Node.js and pnpm.
