@@ -51,7 +51,9 @@ export default function TutorsPage() {
                   </span>
                 </div>
                 <p className="mt-3 text-xs font-semibold uppercase text-slate-500">Focus area</p>
-                <p className="mt-1 text-sm font-semibold text-emerald-800">{member.subjects}</p>
+                <p className="mt-1 text-sm font-semibold text-emerald-800 md:min-h-10">
+                  {member.subjects}
+                </p>
                 <details className="group mt-5 lg:mt-4">
                   <summary className="flex cursor-pointer list-none items-center justify-between border-t border-slate-200 pt-4 text-sm font-semibold text-emerald-800 lg:pt-3">
                     <span>Learn more</span>
