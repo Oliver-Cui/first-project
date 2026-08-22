@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { BrandLogo } from "./brand-logo";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -22,10 +23,7 @@ export function Header() {
           aria-label="Lightpath Coaching home"
           onClick={() => setIsMenuOpen(false)}
         >
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-emerald-700 text-lg font-bold text-white shadow-sm">
-            L
-          </span>
-          <span className="truncate text-base font-semibold text-slate-950">Lightpath Coaching</span>
+          <BrandLogo compact />
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 md:flex">

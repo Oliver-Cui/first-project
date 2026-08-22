@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { BrandLogo } from "./brand-logo";
 import { Header } from "./site-header";
 
 export function Footer() {
@@ -8,10 +9,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <div className="mb-3 flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-lg bg-emerald-700 text-lg font-bold text-white">
-              L
-            </span>
-            <span className="font-semibold">Lightpath Coaching</span>
+            <BrandLogo compact />
           </div>
           <p className="max-w-sm text-sm leading-6 text-slate-650">
             Personalised tutoring that helps students feel confident, supported, and capable.
